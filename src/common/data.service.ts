@@ -12,13 +12,16 @@ export class DataService {
     return of({
       tabs: [
         {
-          name: 'tab1',
+          name: 'TOPICS',
+          icon: 'favorite',
         },
         {
-          name: 'tab2',
+          name: 'ARCHIVES',
+          icon: 'archive',
         },
         {
-          name: 'tab3',
+          name: 'PAGES',
+          icon: 'pages',
         },
       ],
     });

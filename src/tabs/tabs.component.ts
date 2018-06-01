@@ -14,10 +14,10 @@ export class AppComponent {
 
   constructor(private dataService: DataService) {
 
+    this._defaultTab = dataService.getRandomIndex();
     dataService.getTabs().subscribe(
       (tabs) => {
         this._tabs = tabs.tabs;
-        this._defaultTab = dataService.getRandomIndex();
       },
       (err) => console.log(JSON.stringify(err))
     );
@@ -31,5 +31,7 @@ export class AppComponent {
     return this._defaultTab;
   }
 
-
+  onSelect($event) {
+    this._defaultTab = $event.index;
+  }
 }

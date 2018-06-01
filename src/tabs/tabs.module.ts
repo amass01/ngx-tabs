@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './tabs.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatTabsModule, MatCardModule, MatButtonModule } from '@angular/material';
+import { MatTabsModule, MatCardModule, MatButtonModule, MatIconModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -15,6 +15,7 @@ import { MatTabsModule, MatCardModule, MatButtonModule } from '@angular/material
     MatTabsModule,
     MatCardModule,
     MatButtonModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
