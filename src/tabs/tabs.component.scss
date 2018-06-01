@@ -1,0 +1,14 @@
+.ngx-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ngx-tabs__card {
+    flex: 0 50%;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
