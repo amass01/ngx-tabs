@@ -6,9 +6,10 @@
 
 .ngx-tabs__card {
     flex: 0 50%;
-  }
-  
-  .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+}
+
+.ngx-tabs__card-avatar {
+    background-image: url('https://oetkerdigital.com/images/logo.svg');
     background-size: cover;
-  }
+    width: 35px;
+}
