@@ -9,9 +9,19 @@ import { DataService } from '../common/data.service';
 export class AppComponent {
 
   // array to tabs metadata
-  tabs: any[];
+  _tabs: any[];
 
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: DataService) {
+
+    dataService.getTabs().subscribe(
+      (tabs) => this._tabs = tabs.tabs,
+      (err) => console.log(JSON.stringify(err))
+    );
+  }
+
+  get tabs() {
+    return this._tabs;
+  }
 
 
 }
