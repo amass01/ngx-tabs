@@ -30,3 +30,13 @@
     font-weight: 400;
     color: #102379;
 }
+
+.ngx-tabs__topics-link {
+
+    color: #102379;
+    cursor: pointer;
+    &:hover {
+        color: #1d68c7;
+        text-decoration: underline;
+    }
+}

@@ -23,7 +23,7 @@
             <mat-list-item role="listitem"
                             *ngFor="let content of tabsContent[defaultTab].content; let i = index"
             >
-              <a>
+              <a class="ngx-tabs__topics-link">
                 <span matBadge="{{content.posts}}" matBadgeOverlap="false">{{content.title}}</span>
               </a>
             </mat-list-item>
