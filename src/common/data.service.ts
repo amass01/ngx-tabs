@@ -24,6 +24,9 @@ export class DataService {
     });
   }
 
+  /**
+   * Return random integer in the range [0..2] - randon default tab index
+   */
   getRandomIndex(): number {
     return (new Date()).getTime() % 3;
   }
