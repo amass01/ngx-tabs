@@ -23,7 +23,9 @@
             <mat-list-item role="listitem"
                             *ngFor="let content of tabsContent[defaultTab].content; let i = index"
             >
-              {{content.title}} - {{content.posts}}
+              <a>
+                <span matBadge="{{content.posts}}" matBadgeOverlap="false">{{content.title}}</span>
+              </a>
             </mat-list-item>
         </mat-list>
       </div>
