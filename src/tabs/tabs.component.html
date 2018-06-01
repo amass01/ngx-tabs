@@ -31,7 +31,7 @@
                 *ngIf="defaultTab === 1"
       >
           <mat-list-item role="listitem"
-                          *ngFor="let item of tabsContent[defaultTab].content; let i = index"
+                         *ngFor="let item of tabsContent[defaultTab].content; let i = index"
           >
             <img matListAvatar src="{{item.imgUrl}}">
             <p matLine>
@@ -39,8 +39,8 @@
             </p>
           </mat-list-item>
       </mat-list>
-      <div *ngIf="defaultTab === 2">
-        pages
+      <div class="ngx-tabs__pages" *ngIf="defaultTab === 2">
+          <mat-spinner class="ngx-tabs__spinner-pages"></mat-spinner>
       </div>
     </mat-card-content>
   </mat-card>
