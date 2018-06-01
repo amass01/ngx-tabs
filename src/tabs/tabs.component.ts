@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../common/data.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./tabs.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+
+  // array to tabs metadata
+  tabs: any[];
+
+  constructor(private dataService: DataService) { }
+
+
 }
