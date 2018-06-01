@@ -16,10 +16,16 @@
             </ng-template>
         </mat-tab>
       </mat-tab-group>
-      <div *ngIf="defaultTab === 0">
-        <div *ngFor="let content of tabsContent[defaultTab].content; let i = index">
-            {{content.title}} - {{content.posts}}
-        </div>
+      <div>
+        <mat-list role="list"
+                  *ngIf="defaultTab === 0"
+        >
+            <mat-list-item role="listitem"
+                            *ngFor="let content of tabsContent[defaultTab].content; let i = index"
+            >
+              {{content.title}} - {{content.posts}}
+            </mat-list-item>
+        </mat-list>
       </div>
       <div *ngIf="defaultTab === 1">
         ARCHIVES
