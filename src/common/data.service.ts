@@ -35,6 +35,28 @@ export class DataService {
           },
         ],
       },
+      1: {
+        content: [{
+            name: 'Hund',
+            imgUrl: 'assets/img/hund.jpeg',
+          }, {
+            name: 'Pferd',
+            imgUrl: 'assets/img/pferd.jpg',
+          }, {
+            name: 'Eichhörnchen',
+            imgUrl: 'assets/img/squirrel.jpg',
+          }, {
+            name: 'Hund',
+            imgUrl: 'assets/img/hund.jpeg',
+          }, {
+            name: 'Hund',
+            imgUrl: 'assets/img/hund.jpeg',
+          }, {
+            name: 'Hund',
+            imgUrl: 'assets/img/hund.jpeg',
+          },
+        ],
+      },
     });
   }
   /**

@@ -16,22 +16,29 @@
             </ng-template>
         </mat-tab>
       </mat-tab-group>
-      <div>
-        <mat-list role="list"
-                  *ngIf="defaultTab === 0"
-        >
-            <mat-list-item role="listitem"
-                            *ngFor="let content of tabsContent[defaultTab].content; let i = index"
-            >
-              <a class="ngx-tabs__topics-link">
-                <span matBadge="{{content.posts}}" matBadgeOverlap="false">{{content.title}}</span>
-              </a>
-            </mat-list-item>
-        </mat-list>
-      </div>
-      <div *ngIf="defaultTab === 1">
-        ARCHIVES
-      </div>
+      <mat-list role="list"
+                *ngIf="defaultTab === 0"
+      >
+          <mat-list-item role="listitem"
+                          *ngFor="let item of tabsContent[defaultTab].content; let i = index"
+          >
+            <a class="ngx-tabs__topics-link">
+              <span matBadge="{{item.posts}}" matBadgeOverlap="false">{{item.title}}</span>
+            </a>
+          </mat-list-item>
+      </mat-list>
+      <mat-list role="list"
+                *ngIf="defaultTab === 1"
+      >
+          <mat-list-item role="listitem"
+                          *ngFor="let item of tabsContent[defaultTab].content; let i = index"
+          >
+            <img matListAvatar src="{{item.imgUrl}}">
+            <p matLine>
+              <span> {{item.name}} </span>
+            </p>
+          </mat-list-item>
+      </mat-list>
       <div *ngIf="defaultTab === 2">
         pages
       </div>
