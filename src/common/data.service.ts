@@ -46,14 +46,8 @@ export class DataService {
             name: 'Eichhörnchen',
             imgUrl: 'assets/img/squirrel.jpg',
           }, {
-            name: 'Hund',
-            imgUrl: 'assets/img/hund.jpeg',
-          }, {
-            name: 'Hund',
-            imgUrl: 'assets/img/hund.jpeg',
-          }, {
-            name: 'Hund',
-            imgUrl: 'assets/img/hund.jpeg',
+            name: 'Schildkröte',
+            imgUrl: 'assets/img/turtle.jpg',
           },
         ],
       },
