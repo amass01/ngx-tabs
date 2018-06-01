@@ -23,4 +23,8 @@ export class DataService {
       ],
     });
   }
+
+  getRandomIndex(): number {
+    return (new Date()).getTime() % 3;
+  }
 }

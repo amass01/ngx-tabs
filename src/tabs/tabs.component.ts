@@ -17,7 +17,7 @@ export class AppComponent {
     dataService.getTabs().subscribe(
       (tabs) => {
         this._tabs = tabs.tabs;
-        this._defaultTab = 1;
+        this._defaultTab = dataService.getRandomIndex();
       },
       (err) => console.log(JSON.stringify(err))
     );
